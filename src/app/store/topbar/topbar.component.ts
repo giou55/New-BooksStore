@@ -1,5 +1,7 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
+declare const test: any;
+
 @Component({
   selector: 'app-topbar',
   templateUrl: './topbar.component.html',
@@ -18,6 +20,10 @@ export class TopbarComponent implements OnInit {
     if (searchText.length > 3) {
       this.sendSearchText.emit(searchText);
     }
+  }
+
+  onClick(searchText: string) {
+    test(searchText);
   }
 
 }
