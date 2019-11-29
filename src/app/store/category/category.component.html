@@ -2,7 +2,7 @@
 
     <app-topbar (sendSearchText)="displayResults($event)"></app-topbar>
 
-    <app-navbar></app-navbar>
+    <app-navbar (sendCategory)="displayResults($event)"></app-navbar>
 
     <div class="row">
         <div class="col-12 col-md-9 col-lg-9 col-xl-9">

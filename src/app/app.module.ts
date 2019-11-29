@@ -20,7 +20,7 @@ import { environment } from '../environments/environment';
                 canActivate: [StoreFirstGuard]
             },
             {
-                path: "category", component: CategoryComponent,
+                path: "category/:name", component: CategoryComponent,
                 canActivate: [StoreFirstGuard]
             },
             {

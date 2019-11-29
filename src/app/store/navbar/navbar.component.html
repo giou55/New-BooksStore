@@ -6,10 +6,10 @@
         <ul class="navbar-nav">
             <li class="nav-item">
                 <!-- <a class="nav-link" [class.active]="selectedHome == true" (click)="showHome()">Αρχική</a> -->
-                <a class="nav-link" [class.active]="selectedHome == true" routerLink="/store">Αρχική</a>
+                <a class="nav-link" routerLinkActive="active" [class.active]="selectedHome == true" routerLink="/store">Αρχική</a>
             </li>
             <li *ngFor="let cat of categories" class="nav-item">
-                <a [className]="'nav-link'" [class.active]="cat == selectedCategory" [routerLink]="['/category']">
+                <a [className]="'nav-link'" routerLinkActive="active" [class.active]="cat == selectedCategory" routerLink="/category/{{cat}}">
                     {{cat}}
                 </a>
             </li>
