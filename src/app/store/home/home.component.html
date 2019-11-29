@@ -1,8 +1,140 @@
-<div class="row">
-    <div class="col-12">
-        <img src="../../assets/home/bookstore.jpg" alt="" class="bookstore">
+<div class="container-fluid">
+
+    <app-topbar (sendSearchText)="displayResults($event)"></app-topbar>
+
+    <app-navbar></app-navbar>
+
+    <div class="row">
+        <div class="col-12">
+            <img src="../../assets/images/home/bookstore.jpg" alt="" class="bookstore">
+        </div>
+        <div class="col-12">
+            <img src="../../assets/images/home/bookstore2.jpg" alt="" class="bookstore">
+        </div>
     </div>
-    <div class="col-12">
-        <img src="../../assets/home/bookstore2.jpg" alt="" class="bookstore">
-    </div>
+
+    <app-footer></app-footer>
+
+    <!-- <nav class="navbar navbar-expand-md navbar-dark bg-maroon">
+        <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" [class.active]="selectedHome == true"
+                        (click)="showHome()">Αρχική</a>
+                </li>
+                <li *ngFor="let cat of categories" class="nav-item">
+                    <a [className]="'nav-link'" [class.active]="cat == selectedCategory"
+                        (click)="showCategory(cat)">
+                        {{cat}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <!-- <div *ngIf="searchResults != null">
+        <div class="row">
+            <div class="col-12">
+                <p>Βρέθηκαν {{ searchResults.length }} αποτελέσματα: </p>
+                <div class="row">
+                    <div *ngFor="let product of searchResults" class="col-6 col-md-4 col-lg-3 col-xl-3 books"
+                        style="padding: 0.8rem;">
+                        <img src="{{ product.imagePath }}" alt="image">
+                        <h4>{{product.name}}</h4>
+                        <div>{{product.author}}</div>
+                        <div class="badge badge-pill badge-primary">
+                            {{ product.price | currency:"USD":"symbol":"2.2-2" }}
+                        </div>
+                        <div class="card-text bg-white p-1">
+                            <button class="btn btn-success btn-sm" (click)="addProductToCart(product)">
+                                Προσθήκη στο καλάθι
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div *ngIf="selectedHome == true">
+        <div class="row">
+            <div class="col-12">
+                <img src="../../assets/images/home/bookstore.jpg" alt="" class="bookstore">
+            </div>
+            <div class="col-12">
+                    <img src="../../assets/images/home/bookstore2.jpg" alt="" class="bookstore">
+                </div>
+        </div>
+    </div> -->
+    
+    <!-- <div class="row" *ngIf="selectedCategory != null">
+        <div class="col-12 col-md-9 col-lg-9 col-xl-9">
+
+            <div class="row">
+                <div class="col-12" style="margin:1rem auto;">
+                    <div class="form-inline float-left">
+                        <select class="form-control" [value]="productsPerPage"
+                            (change)="changePageSize($event.target.value)">
+                            <option value="8">8 ανά σελίδα</option>
+                            <option value="16">16 ανά σελίδα</option>
+                            <option value="24">24 ανά σελίδα</option>
+                            <option value="32">32 ανά σελίδα</option>
+                        </select>
+                    </div>
+                    <div class="btn-group float-left ml-2" id="pageBtn">
+                        <button *counter="let page of pageCount" (click)="changePage(page)"
+                            class="btn" [class.active]="page == selectedPage">
+                            {{page}}
+                        </button>
+                    </div>
+                    <h3 class="float-left ml-4">{{ selectedCategory }}</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div *ngFor="let product of products" class="col-6 col-md-4 col-lg-3 col-xl-3 books"
+                            style="padding: 0.8rem;">
+                            <img src="{{ product.imagePath }}" alt="image">
+                            <h4>{{product.name}}</h4>
+                            <div>{{product.author}}</div>
+                            <div class="badge badge-pill badge-primary">
+                                {{ product.price | currency:"USD":"symbol":"2.2-2" }}
+                            </div>
+                            <div class="card-text bg-white p-1">
+                                <button class="btn btn-success btn-sm" (click)="addProductToCart(product)">
+                                    Προσθήκη στο καλάθι
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-0 col-md-3 col-lg-3 col-xl-3" style="padding-top: 1rem; text-align:center;" id="sidebar">
+            <div
+                style="color:#444; margin: 0.6rem; padding: 0.6rem; border: 1px solid #ccc; border-radius: 5px; line-height: 1.2;">
+                <h3 style="padding-bottom: 0.4rem; border-bottom: 1px solid #ccc;">Bestsellers</h3>
+                <img src="../../assets/images/bestsellers/to-dwro.jpg" alt="" [className]="'logo'">
+                <div>Το Δώρο<br>Στέφανος Ξενάκης</div>
+                <img src="../../assets/images/bestsellers/20-bimata-mprosta.jpg" alt="" [className]="'logo'">
+                <div>20 βήματα μπροστά<br>Jorge Bucay</div>
+                <img src="../../assets/images/bestsellers/i-siopili-asthenis.jpg" alt="" [className]="'logo'">
+                <div>Η Σιωπηλή Ασθενής<br>Alex Michaelides</div>
+                <img src="../../assets/images/bestsellers/taksidi-sti-benetia.jpg" alt="" [className]="'logo'">
+                <div>Ταξίδι στην Βενετία<br>Λένα Μαντά</div>
+                <img src="../../assets/images/bestsellers/syntomes-apantiseis.jpg" alt="" [className]="'logo'">
+                <div>Σύντομες απαντήσεις στα μεγάλα ερωτήματα<br>Stephen Hawking</div>
+            </div>
+        </div>
+
+    </div> -->
+
 </div>
+

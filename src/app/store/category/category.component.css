@@ -1,0 +1,20 @@
+#pageBtn button {
+    border: 1px solid #681716;
+    color:#333;
+    box-shadow: none;
+    background-color: #fff;
+}
+#pageBtn button.active {
+    background-color: #681716;
+    color:#fff;
+}
+.books img {
+    max-width: 100%;
+    max-height: 300px;
+}
+.books h4 {
+    font-size: 18px;
+}
+.btn {
+    white-space: pre-wrap;
+}

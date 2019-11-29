@@ -9,8 +9,9 @@ import { CounterDirective } from "./counter.directive";
 import { TopbarComponent } from "./topbar/topbar.component";
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { CategoriesComponent } from './categories/categories.component';
+import { CategoryComponent } from './category/category.component';
 import { ResultsComponent } from './results/results.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { CartSummaryComponent } from "./cart/cartSummary.component";
@@ -33,8 +34,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         TopbarComponent, 
         NavbarComponent,
         HomeComponent, 
-        CategoriesComponent,
+        CategoryComponent,
         ResultsComponent,
+        SidebarComponent,
         FooterComponent,
         CartSummaryComponent,
         CartDetailComponent, 
