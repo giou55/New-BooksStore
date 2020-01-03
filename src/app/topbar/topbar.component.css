@@ -58,6 +58,7 @@ a:hover {
     padding-top: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 #headphones{
     display: inline-block;
@@ -120,7 +121,7 @@ a:hover {
         margin-bottom: 0;
     }
     .logo {
-        width: 70%;
+        width: 90%;
     }
     #search input[type=text] {
         width: 70%;

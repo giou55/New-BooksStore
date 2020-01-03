@@ -12,11 +12,13 @@ import { CheckoutComponent } from "./checkout.component";
 import { FooterComponent } from '../footer/footer.component';
 import { RouterModule } from "@angular/router";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
-    imports: [ModelModule, CommonModule, BrowserModule, FormsModule, RouterModule, BrowserAnimationsModule],
+    imports: [ModelModule, CommonModule, BrowserModule, FormsModule, RouterModule, 
+              BrowserAnimationsModule, Ng2SearchPipeModule],
     declarations: [StoreComponent, CounterDirective, TopbarComponent, CartSummaryComponent,
-        CartDetailComponent, CheckoutComponent, FooterComponent],
+                   CartDetailComponent, CheckoutComponent, FooterComponent],
     exports: [StoreComponent, CartDetailComponent, CheckoutComponent]
 })
 export class StoreModule { }

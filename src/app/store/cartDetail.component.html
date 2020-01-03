@@ -1,25 +1,27 @@
 <div class="container-fluid">
     <div class="row">
       <div class="col bg-dark text-white">
-        <a class="navbar-brand">SPORTS STORE</a>
+        <a class="navbar-brand">
+          <h2>Books Guide</h2>
+        </a>
       </div>
     </div>
     <div class="row">
       <div class="col mt-2">
-        <h2 class="text-center">Your Cart</h2>
+        <h2 class="text-center">Το καλάθι σας</h2>
         <table class="table table-bordered table-striped p-2">
           <thead>
             <tr>
-              <th>Quantity</th>
-              <th>Product</th>
-              <th class="text-right">Price</th>
-              <th class="text-right">Subtotal</th>
+              <th>Ποσότητα</th>
+              <th>Προϊόν</th>
+              <th class="text-right">Τιμή</th>
+              <th class="text-right">Σύνολο</th>
             </tr>
           </thead>
           <tbody>
             <tr *ngIf="cart.lines.length == 0">
               <td colspan="4" class="text-center">
-                Your cart is empty
+                Το καλάθι σας είναι άδειο
               </td>
             </tr>
             <tr *ngFor="let line of cart.lines">
@@ -32,24 +34,25 @@
               </td>
               <td>{{line.product.name}}</td>
               <td class="text-right">
-                {{line.product.price | currency:"USD":true:"2.2-2"}}
+                {{line.product.price | currency:"EUR":"symbol"}}
               </td>
               <td class="text-right">
-                {{(line.lineTotal) | currency:"USD":true:"2.2-2" }}
+                {{(line.lineTotal) | currency:"EUR":"symbol"}}
               </td>
               <td class="text-center">
                 <button class="btn btn-sm btn-danger"
                         (click)="cart.removeLine(line.product.id)">
-                  Remove
+                  Αφαίρεση
                 </button>
               </td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="3" class="text-right">Total:</td>
+              <td colspan="3" class="text-right">Γενικό σύνολο
+                :</td>
               <td class="text-right">
-                {{cart.cartPrice | currency:"USD":"symbol":"2.2-2"}}
+                {{cart.cartPrice | currency:"EUR":"symbol"}}
               </td>
             </tr>
           </tfoot>
@@ -60,7 +63,7 @@
       <div class="col">
       <div class="text-center">
         <button class="btn btn-primary m-1" routerLink="/store">
-            Continue Shopping
+            Συνέχιση αγορών
         </button>
         <button class="btn btn-secondary m-1" routerLink="/checkout"
             [disabled]="cart.lines.length == 0 && connected">

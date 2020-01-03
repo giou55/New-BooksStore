@@ -4,21 +4,25 @@ import { ProductRepository } from "../model/product.repository";
 import { Cart } from "../model/cart.model";
 import { Router } from "@angular/router";
 
+//declare const doSearch:any;
+
 @Component({
     selector: "store",
     templateUrl: "store.component.html",
     styleUrls: ['./store.component.css']
 })
 export class StoreComponent {
+    public searchText = "";
+
     public selectedCategory = null;
     public selectedHome = true;
     public productsPerPage = 8;
     public selectedPage = 1;
     public searchResults = null;
 
-    constructor(private repository: ProductRepository,
-        private cart: Cart,
-        private router: Router) { }
+    constructor( private repository: ProductRepository,
+                 private cart: Cart,
+                 private router: Router) { }
 
     get products(): Product[] {
         let pageIndex = (this.selectedPage - 1) * this.productsPerPage
@@ -58,7 +62,7 @@ export class StoreComponent {
 
     addProductToCart(product: Product) {
         this.cart.addLine(product);
-        this.router.navigateByUrl("/cart");
+        //this.router.navigateByUrl("/cart");
     }
 
     navbarOpen = false;
@@ -68,9 +72,13 @@ export class StoreComponent {
     }
 
     displayResults(results:string) {
-        this.selectedCategory = null;
-        this.selectedHome = false;
-        this.searchResults =  this.repository.getProducts().filter(x => x.name == results);
+        this.searchText = results;
+        //this.selectedCategory = null;
+        //this.selectedHome = false;
+        //this.searchResults =  this.repository.getProducts().filter(x => x.name == results);
+        //console.log(doSearch(this.products,results));
+        //console.log(doSearch(this.products, results));
+        //this.searchResults = doSearch(this.products, results); 
     }
 
 }

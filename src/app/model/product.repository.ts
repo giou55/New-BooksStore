@@ -7,13 +7,25 @@ import { RestDataSource } from "./rest.datasource";
 export class ProductRepository {
     private products: Product[] = [];
     private categories: string[] = [];
+    private names: string[] = [];
+    private authors: string[] = [];
 
     constructor(private dataSource: RestDataSource) {
         dataSource.getProducts().subscribe(data => {
             this.products = data;
             this.categories = data.map(p => p.category)
                 .filter((c, index, array) => array.indexOf(c) == index).sort();
+            this.names = data.map(p => p.name);
+            this.authors = data.map(p => p.author);
         });
+    }
+
+    getNames(): string[] {
+        return this.names;
+    }
+
+    getAuthors(): string[] {
+        return this.authors;
     }
 
     getProducts(category: string = null): Product[] {

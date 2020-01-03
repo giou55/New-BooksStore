@@ -159,6 +159,14 @@
       "author": "SOLOUP",
       "imagePath": "assets/comics.jpg",
       "price": 20.9
+    },
+    {
+      "id": 21,
+      "name": "Infographics Καθημερινά",
+      "category": "Γραφιστική-Design",
+      "author": "Πάνος Κωνσταντόπουλοw",
+      "imagePath": "assets/infographics.jpg",
+      "price": 35
     }
   ],
   "orders": [
