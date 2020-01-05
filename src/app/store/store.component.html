@@ -116,11 +116,12 @@
                             <img src="{{ product.imagePath }}" alt="image">
                             <h4>{{product.name}}</h4>
                             <div>{{product.author}}</div>
-                            <div class="badge badge-pill badge-primary">
+
+                            <div class="badge badge-pill badge-danger">
                                 {{ product.price | currency:"EUR":"symbol" }}
                             </div>
                             <div class="card-text bg-white p-1">
-                                <button class="btn btn-success btn-sm" (click)="addProductToCart(product)">
+                                <button class="btn btn-dark btn-sm" (click)="addProductToCart(product)">
                                     Προσθήκη στο καλάθι
                                 </button>
                             </div>
@@ -131,33 +132,33 @@
 
         </div>
 
-        <div class="col-0 col-md-3 col-lg-3 col-xl-3" style="padding-top: 1rem; text-align:center;" id="sidebar">
-            <div style="color:#444; margin: 0.6rem; padding: 0.6rem; border: 1px solid #ccc; border-radius: 5px; line-height: 1.2;">
+        <div class="col-0 col-md-3 col-lg-3 col-xl-3" id="sidebar-container">
+            <div id="sidebar">
                 <h3 style="padding-bottom: 0.4rem; border-bottom: 1px solid #ccc;">Bestsellers</h3>
 
                     <div class="row">
                         <div class="col-6 col-md-12">
-                            <img src="../../assets/images/bestsellers/to-dwro.jpg" alt="" [className]="'logo'">
+                            <img src="../../assets/images/bestsellers/to-dwro.jpg" alt="">
                             <div>Το Δώρο<br>Στέφανος Ξενάκης</div>
                         </div>
 
                         <div class="col-6 col-md-12">
-                            <img src="../../assets/images/bestsellers/20-bimata-mprosta.jpg" alt="" [className]="'logo'">
+                            <img src="../../assets/images/bestsellers/20-bimata-mprosta.jpg" alt="">
                             <div>20 βήματα μπροστά<br>Jorge Bucay</div>
                         </div>
 
                         <div class="col-6 col-md-12 col-lg-12 col-xl-12">
-                            <img src="../../assets/images/bestsellers/i-siopili-asthenis.jpg" alt="" [className]="'logo'">
+                            <img src="../../assets/images/bestsellers/i-siopili-asthenis.jpg" alt="">
                             <div>Η Σιωπηλή Ασθενής<br>Alex Michaelides</div>
                         </div>
 
                         <div class="col-6 col-md-12 col-lg-12 col-xl-12">
-                            <img src="../../assets/images/bestsellers/taksidi-sti-benetia.jpg" alt="" [className]="'logo'">
+                            <img src="../../assets/images/bestsellers/taksidi-sti-benetia.jpg" alt="">
                             <div>Ταξίδι στην Βενετία<br>Λένα Μαντά</div>
                         </div>
 
                         <div class="col-6 col-md-12 col-lg-12 col-xl-12">
-                            <img src="../../assets/images/bestsellers/syntomes-apantiseis.jpg" alt="" [className]="'logo'">
+                            <img src="../../assets/images/bestsellers/syntomes-apantiseis.jpg" alt="">
                             <div>Σύντομες απαντήσεις στα μεγάλα ερωτήματα<br>Stephen Hawking</div>
                         </div>
                     </div>
