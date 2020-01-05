@@ -4,7 +4,6 @@ import { ProductRepository } from "../model/product.repository";
 import { Cart } from "../model/cart.model";
 import { Router } from "@angular/router";
 
-//declare const doSearch:any;
 
 @Component({
     selector: "store",
@@ -12,8 +11,6 @@ import { Router } from "@angular/router";
     styleUrls: ['./store.component.css']
 })
 export class StoreComponent {
-    public searchText = "";
-
     public selectedCategory = null;
     public selectedHome = true;
     public productsPerPage = 8;
@@ -62,7 +59,7 @@ export class StoreComponent {
 
     addProductToCart(product: Product) {
         this.cart.addLine(product);
-        //this.router.navigateByUrl("/cart");
+        this.router.navigateByUrl("/cart");
     }
 
     navbarOpen = false;
@@ -71,14 +68,10 @@ export class StoreComponent {
         this.navbarOpen = !this.navbarOpen;
     }
 
-    displayResults(results:string) {
-        this.searchText = results;
-        //this.selectedCategory = null;
-        //this.selectedHome = false;
-        //this.searchResults =  this.repository.getProducts().filter(x => x.name == results);
-        //console.log(doSearch(this.products,results));
-        //console.log(doSearch(this.products, results));
-        //this.searchResults = doSearch(this.products, results); 
+    doSearch(text:string) {
+        this.selectedCategory = null;
+        this.selectedHome = false;
+        this.searchResults =  this.repository.getProducts().filter(x => x.name.toLowerCase().search(text.toLowerCase()) !== -1);
     }
 
 }

@@ -8,9 +8,12 @@
 h4 {
     font-size: 1.2rem;
 }
-button {
+#footer button {
     background: #681716;
     border: none;
+}
+#footer button:hover {
+    background: #ad3633;
 }
 i {
     margin-right: 10px;

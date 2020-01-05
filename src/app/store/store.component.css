@@ -1,3 +1,6 @@
+h3 {
+    font-size: 1.3rem;
+}
 #topbar {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +13,7 @@
 }
 .logo {
     width: 70%;
-    margin: 10px;
+    margin: 0.8rem;
 }
 a {
     color:#333;
@@ -23,7 +26,6 @@ a:hover {
     font-family: FontAwesome;
 }
 #search {
-    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,12 +46,12 @@ a:hover {
     background: #681716;
     color: white;
     font-size: 15px;
-    border: 1px solid grey;
+    border: 1px solid #681716;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
 }
 #search button:hover {
-    background: #0b7dda;
+    background: #ad3633;
 }
 /* Clear floats */
 #search::after {
@@ -58,10 +60,10 @@ a:hover {
     display: table;
 }
 #support {
-    padding-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 #headphones{
     display: inline-block;
@@ -73,12 +75,12 @@ a:hover {
     font-size: 0.9rem;
 }
 #login {
-    padding-top: 10px;
     text-align: center;
     font-size: 1rem;
+    margin-bottom: 1.5rem;
 }
-#cart{
-    padding-top: 10px;
+#login .btn {
+    white-space: nowrap;
 }
 
 @media only screen and (min-width: 576px) {
@@ -90,6 +92,12 @@ a:hover {
     }
     #search button {
         width: 20%;
+    }
+    #support {
+        margin-bottom: 0;
+    }
+    #login {
+        margin-bottom: 0;
     }
 }
 
