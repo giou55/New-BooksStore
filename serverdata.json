@@ -5,7 +5,7 @@
       "name": "Έγκλημα και Τιμωρία",
       "category": "Λογοτεχνία",
       "author": "ΝΤΟΣΤΟΓΙΕΦΣΚΙ ΦΙΟΝΤΟΡ",
-      "imagePath": "assets/eglima.jpg",
+      "imagePath": "assets/images/eglima.jpg",
       "price": 15
     },
     {
@@ -13,7 +13,7 @@
       "name": "Rock Εγκυκλοπαίδεια",
       "category": "Μουσική",
       "author": "ΣΥΛΛΟΓΙΚΟ ΕΡΓΟ",
-      "imagePath": "assets/rock.jpg",
+      "imagePath": "assets/images/rock.jpg",
       "price": 22
     },
     {
@@ -21,7 +21,7 @@
       "name": "100 Cult Films",
       "category": "Κινηματογράφος",
       "author": "ERNEST MATHIJS, XAVIER MENDIK",
-      "imagePath": "assets/cult-films.jpg",
+      "imagePath": "assets/images/cult-films.jpg",
       "price": 20.9
     },
     {
@@ -29,7 +29,7 @@
       "name": "Τα Ελληνικά Windows 98 για Πρωτάρηδες",
       "category": "Πληροφορική-Υπολογιστές",
       "author": "ANDY RATHBONE",
-      "imagePath": "assets/windows-98.jpg",
+      "imagePath": "assets/images/windows-98.jpg",
       "price": 10
     },
     {
@@ -37,7 +37,7 @@
       "name": "Μαθηματικά Πεντάλεπτα",
       "category": "Επιστήμες-Τεχνολογία",
       "author": "BEHRENDS EHRHARD",
-      "imagePath": "assets/mathimatika-pentalepta.jpg",
+      "imagePath": "assets/images/mathimatika-pentalepta.jpg",
       "price": 24
     },
     {
@@ -45,7 +45,7 @@
       "name": "Όσα δεν γνωρίζατε για τα χρόνια του Καποδίστρια, του Όθωνα και του Γεωργίου του Α΄",
       "category": "Ιστορία",
       "author": "ΣΥΛΛΟΓΙΚΟ ΕΡΓΟ",
-      "imagePath": "assets/osa-den-gnorizate.jpg",
+      "imagePath": "assets/images/osa-den-gnorizate.jpg",
       "price": 12
     },
     {
@@ -53,7 +53,7 @@
       "name": "Μόμπυ Ντικ",
       "category": "Λογοτεχνία",
       "author": "ΜΕΛΒΙΛ ΧΕΡΜΑΝ",
-      "imagePath": "assets/moby.jpg",
+      "imagePath": "assets/images/moby.jpg",
       "price": 15
     },
     {
@@ -61,7 +61,7 @@
       "name": "Η Κόμη της Βερενίκης",
       "category": "Επιστήμες-Τεχνολογία",
       "author": "ΓΙΩΡΓΟΣ ΓΡΑΜΜΑΤΙΚΑΚΗΣ",
-      "imagePath": "assets/komi-tis-verenikis.jpg",
+      "imagePath": "assets/images/komi-tis-verenikis.jpg",
       "price": 20
     },
     {
@@ -69,7 +69,7 @@
       "name": "David Bowie – Αναζητώντας τον Starman",
       "category": "Μουσική",
       "author": "ΜΑΡΙΑ ΜΑΡΚΟΥΛΗ",
-      "imagePath": "assets/starman.jpg",
+      "imagePath": "assets/images/starman.jpg",
       "price": 18
     },
     {
@@ -77,7 +77,7 @@
       "name": "HTML and CSS",
       "category": "Πληροφορική-Υπολογιστές",
       "author": "JON DUCKETT",
-      "imagePath": "assets/html.jpg",
+      "imagePath": "assets/images/html.jpg",
       "price": 11
     },
     {
@@ -85,7 +85,7 @@
       "name": "Οι φιλόσοφοι του αρχαίου κόσμου",
       "category": "Φιλοσοφία",
       "author": "TREVOR CURNOW",
-      "imagePath": "assets/filosofoi.jpg",
+      "imagePath": "assets/images/filosofoi.jpg",
       "price": 21
     },
     {
@@ -93,7 +93,7 @@
       "name": "Ο Βίος και η Πολιτεία του Σκρούτζ Μακ Ντακ",
       "category": "Κόμικς",
       "author": "ΝΤΟΝ ΡΟΣΑ",
-      "imagePath": "assets/vios-kai-politeia.jpg",
+      "imagePath": "assets/images/vios-kai-politeia.jpg",
       "price": 8
     },
     {
@@ -101,7 +101,7 @@
       "name": "Μια σταγόνα ιστορία",
       "category": "Ιστορία",
       "author": "ΔΗΜΗΤΡΗΣ ΚΑΜΠΟΥΡΑΚΗΣ",
-      "imagePath": "assets/mia-stagona-istoria.jpg",
+      "imagePath": "assets/images/mia-stagona-istoria.jpg",
       "price": 16
     },
     {
@@ -109,7 +109,7 @@
       "name": "The Stanley Kubrick Archives",
       "category": "Κινηματογράφος",
       "author": "ALISON CASTLE",
-      "imagePath": "assets/kubrick.jpg",
+      "imagePath": "assets/images/kubrick.jpg",
       "price": 25
     },
     {
@@ -117,7 +117,7 @@
       "name": "Βασική γραφιστική υποδομή",
       "category": "Γραφιστική-Design",
       "author": "ΣΠΥΡΟΣ ΜΠΕΣΗΣ",
-      "imagePath": "assets/grafistiki.jpg",
+      "imagePath": "assets/images/grafistiki.jpg",
       "price": 18
     },
     {
@@ -125,7 +125,7 @@
       "name": "Elements of graphic design",
       "category": "Γραφιστική-Design",
       "author": "RICK JOHNSON",
-      "imagePath": "assets/elements.jpg",
+      "imagePath": "assets/images/elements.jpg",
       "price": 15
     },
     {
@@ -133,7 +133,7 @@
       "name": "Σολάρις",
       "category": "Λογοτεχνία",
       "author": "ΣΤΑΝΙΣΛΑΒ ΛΕΜ",
-      "imagePath": "assets/solaris.jpg",
+      "imagePath": "assets/images/solaris.jpg",
       "price": 15
     },
     {
@@ -141,7 +141,7 @@
       "name": "1001 Albums You Must Hear Before You Die",
       "category": "Μουσική",
       "author": "ROBERT DIMERY",
-      "imagePath": "assets/1001-albums.jpg",
+      "imagePath": "assets/images/1001-albums.jpg",
       "price": 32
     },
     {
@@ -149,7 +149,7 @@
       "name": "Κυνηγώντας το μεγάλο ψάρι",
       "category": "Κινηματογράφος",
       "author": "DAVID LYNCH",
-      "imagePath": "assets/megalo-psari.jpg",
+      "imagePath": "assets/images/megalo-psari.jpg",
       "price": 22
     },
     {
@@ -157,15 +157,15 @@
       "name": "Τα ελληνικά Comics",
       "category": "Κόμικς",
       "author": "SOLOUP",
-      "imagePath": "assets/comics.jpg",
+      "imagePath": "assets/images/comics.jpg",
       "price": 20.9
     },
     {
       "id": 21,
       "name": "Infographics Καθημερινά",
       "category": "Γραφιστική-Design",
-      "author": "Πάνος Κωνσταντόπουλοw",
-      "imagePath": "assets/infographics.jpg",
+      "author": "Πάνος Κωνσταντόπουλοs",
+      "imagePath": "assets/images/infographics.jpg",
       "price": 35
     }
   ],
