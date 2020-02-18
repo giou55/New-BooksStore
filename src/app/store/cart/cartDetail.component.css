@@ -1,0 +1,25 @@
+h3 {
+    font-size: 1.5rem;
+}
+.table th {
+    padding: .3rem;
+    font-size: 0.9rem;
+}
+.table td {
+    padding: .3rem;
+    font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 768px) {
+    h3 {
+        font-size: 1.75rem;
+    }
+    .table th {
+        padding: .75rem;
+        font-size: 1rem;
+    }
+    .table td {
+        padding: .75rem;
+        font-size: 1rem;
+    }
+}

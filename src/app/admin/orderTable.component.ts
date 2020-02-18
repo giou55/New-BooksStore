@@ -3,7 +3,8 @@ import { Order } from "../model/order.model";
 import { OrderRepository } from "../model/order.repository";
 
 @Component({
-    templateUrl: "orderTable.component.html"
+    templateUrl: "orderTable.component.html",
+    styleUrls: ["orderTable.component.css"]
 })
 export class OrderTableComponent {
     includeShipped = false;

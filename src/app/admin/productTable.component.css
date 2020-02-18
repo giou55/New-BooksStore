@@ -1,0 +1,11 @@
+.table-sm td, .table-sm th {
+    padding: .1rem;
+    font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .table-sm td, .table-sm th {
+        padding: .3rem;
+        font-size: 1rem;
+    }
+}

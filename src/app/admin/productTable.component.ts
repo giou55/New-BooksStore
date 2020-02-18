@@ -3,7 +3,8 @@ import { Product } from "../model/product.model";
 import { ProductRepository } from "../model/product.repository";
 
 @Component({
-    templateUrl: "productTable.component.html"
+    templateUrl: "productTable.component.html",
+    styleUrls: ["productTable.component.css"]
 })
 export class ProductTableComponent {
 

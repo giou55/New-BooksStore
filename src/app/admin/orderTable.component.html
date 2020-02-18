@@ -1,37 +1,34 @@
 <div class="form-check">
     <label class="form-check-label">
         <input type="checkbox" class="form-check-input" [(ngModel)]="includeShipped" />
-        Προβολή παραγγελιών που έχουν αποσταλεί
+            <p>Προβολή παραγγελιών που έχουν αποσταλεί</p>
     </label>
 </div>
-<table class="table table-sm">
-    <thead>
-        <tr><th>Name</th><th>Zip</th><th colspan="2">Cart</th><th></th></tr>
-    </thead>
-    <tbody>
-        <tr *ngIf="getOrders().length == 0">
-            <td colspan="5">Δεν υπάρχουν παραγγελίες</td>
+
+<p class="mt-2" *ngIf="getOrders().length == 0">Δεν υπάρχουν παραγγελίες</p>
+
+
+<ng-template ngFor let-o [ngForOf]="getOrders()">
+    <table class="table-sm mt-2">
+        <tr>
+          <th>Στοιχεία παραλήπτη:</th>
         </tr>
-        <ng-template ngFor let-o [ngForOf]="getOrders()">
-            <tr>
-                <td>{{o.name}}</td>
-                <td>{{o.zip}}</td>
-                <th>Προϊόν</th>
-                <th>Ποσότητα</th>
-                <td>
-                    <button class="btn btn-warning mr-2" (click)="markShipped(o)">
-                        Αποστολή
-                    </button>
-                    <button class="btn btn-danger" (click)="delete(o.id)">
-                        Διαγραφή
-                    </button>
-                </td>
-            </tr>
-            <tr *ngFor="let line of o.cart.lines">
-                <td colspan="2"></td>
-                <td>{{line.product.name}}</td>
-                <td>{{line.quantity}}</td>
-            </tr>
-        </ng-template>
-    </tbody>
-</table>
+        <tr>
+          <td>Όνομα: {{o.name}}, Διεύθυνση: {{o.address}}, Πόλη: {{o.address}}, Τ.Κ.: {{o.zip}}, Χώρα: {{o.country}}
+          </td>
+        </tr>
+        <tr>
+          <th>Προϊόντα παραγγελίας:</th>
+        </tr>
+        <tr *ngFor="let line of o.cart.lines">
+            <td>Τίτλος: {{line.product.name}}, Ποσότητα: {{line.quantity}}</td>
+        </tr>
+      </table>
+      <button class="btn btn-sm btn-warning mr-2" (click)="markShipped(o)">
+        Αποστολή
+      </button>
+      <button class="btn btn-sm btn-danger" (click)="delete(o.id)">
+        Διαγραφή
+      </button>
+      <hr>
+</ng-template>

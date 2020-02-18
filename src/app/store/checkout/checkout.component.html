@@ -1,64 +1,75 @@
 <div class="container-fluid">
+
     <div class="row">
-      <div class="col bg-dark text-white">
-        <a class="navbar-brand">
-          <h2>Books Guide</h2>
-        </a>
-      </div>
+        <div class="col bg-dark text-white">
+            <a class="navbar-brand">
+                <h2>Books Guide</h2>
+            </a>
+        </div>
     </div>
-  </div>
-  
-  <div *ngIf="orderSent" class="m-2 text-center">
-    <h2>Ευχαριστούμε!</h2>
-    <p>Ευχαριστούμε για την παραγγελία σας.</p>
-    <p>Τα εμπορεύματα θα αποσταλούν το συντομότερο δυνατόν.</p>
-    <button class="btn btn-primary" routerLink="/store">Επιστροφή στο κατάστημα</button>
-  </div>
-  <form *ngIf="!orderSent" #form="ngForm" novalidate
-        (ngSubmit)="submitOrder(form)" class="m-2">
-    <div class="form-group">
-      <label>Ονοματεπώνυμο</label>
-      <input class="form-control" #name="ngModel" name="name"
-              [(ngModel)]="order.name" required />
-      <span *ngIf="submitted && name.invalid" class="text-danger">
-        Παρακαλώ πληκτρολογήστε το ονοματεπώνυμό σας
-      </span>
+
+
+    <div class="row mt-2 p-2">
+      
+        <div class="col-0 col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
+
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+
+            <div *ngIf="orderSent" class="m-2 text-center">
+                <h2>Ευχαριστούμε!</h2>
+                <p>Ευχαριστούμε για την παραγγελία σας.</p>
+                <p>Τα εμπορεύματα θα αποσταλούν το συντομότερο δυνατόν.</p>
+                <button class="btn btn-primary" routerLink="/store">Επιστροφή στο κατάστημα</button>
+            </div>
+
+            <form *ngIf="!orderSent" #form="ngForm" novalidate (ngSubmit)="submitOrder(form)" class="m-2">
+                <div class="form-group">
+                    <label>Ονοματεπώνυμο</label>
+                    <input class="form-control" #name="ngModel" name="name" [(ngModel)]="order.name" required />
+                    <span *ngIf="submitted && name.invalid" class="text-danger">
+                        Παρακαλώ πληκτρολογήστε το ονοματεπώνυμό σας
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label>Διεύθυνση</label>
+                    <input class="form-control" #address="ngModel" name="address" [(ngModel)]="order.address"
+                        required />
+                    <span *ngIf="submitted && address.invalid" class="text-danger">
+                        Παρακαλώ πληκτρολογήστε την διεύθυνσή σας
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label>Πόλη</label>
+                    <input class="form-control" #city="ngModel" name="city" [(ngModel)]="order.city" required />
+                    <span *ngIf="submitted && city.invalid" class="text-danger">
+                        Παρακαλώ πληκτρολογήστε την πόλη σας
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label>Ταχυδρομικός κώδικας</label>
+                    <input class="form-control" #zip="ngModel" name="zip" [(ngModel)]="order.zip" required />
+                    <span *ngIf="submitted && zip.invalid" class="text-danger">
+                        Παρακαλώ πληκτρολογήστε το ταχυδρομικό κώδικα
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label>Χώρα</label>
+                    <input class="form-control" #country="ngModel" name="country" [(ngModel)]="order.country"
+                        required />
+                    <span *ngIf="submitted && country.invalid" class="text-danger">
+                        Παρακαλώ πληκτρολογήστε την χώρα σας
+                    </span>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-secondary m-1" routerLink="/cart">Πίσω</button>
+                    <button class="btn btn-secondary m-1" type="submit">Ολοκλήρωση παραγγελίας</button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="col-0 col-sm-1 col-md-2 col-lg-3 col-xl-4"></div>
+
     </div>
-    <div class="form-group">
-      <label>Διεύθυνση</label>
-      <input class="form-control" #address="ngModel" name="address"
-              [(ngModel)]="order.address" required />
-      <span *ngIf="submitted && address.invalid" class="text-danger">
-        Παρακαλώ πληκτρολογήστε την διεύθυνσή σας
-      </span>
-    </div>
-    <div class="form-group">
-      <label>Πόλη</label>
-      <input class="form-control" #city="ngModel" name="city"
-              [(ngModel)]="order.city" required />
-      <span *ngIf="submitted && city.invalid" class="text-danger">
-        Παρακαλώ πληκτρολογήστε την πόλη σας
-      </span>
-    </div>
-    <div class="form-group">
-      <label>Ταχυδρομικός κώδικας</label>
-      <input class="form-control" #zip="ngModel" name="zip"
-              [(ngModel)]="order.zip" required />
-      <span *ngIf="submitted && zip.invalid" class="text-danger">
-        Παρακαλώ πληκτρολογήστε το ταχυδρομικό κώδικα
-      </span>
-    </div>
-    <div class="form-group">
-      <label>Χώρα</label>
-      <input class="form-control" #country="ngModel" name="country"
-              [(ngModel)]="order.country" required />
-      <span *ngIf="submitted && country.invalid" class="text-danger">
-        Παρακαλώ πληκτρολογήστε την χώρα σας
-      </span>
-    </div>
-    <div class="text-center">
-      <button class="btn btn-secondary m-1" routerLink="/cart">Πίσω</button>
-      <button class="btn btn-secondary m-1" type="submit">Ολοκλήρωση παραγγελίας</button>
-    </div>
-  </form>
-  
+
+</div>

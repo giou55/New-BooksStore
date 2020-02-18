@@ -7,12 +7,12 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/0.37a9f2e29344abe6b59f.js",
+        "/0.3c7bcc363b227cbc13a7.js",
         "/favicon.ico",
         "/index.html",
-        "/main.46495f5e3dd5c3fcc7d2.js",
+        "/main.ac33e2b1bde1662bf239.js",
         "/polyfills.27ba7ccfa975df7b6881.js",
-        "/runtime.0cc96ecc16e133d29bb2.js",
+        "/runtime.874b36890a6905162c13.js",
         "/styles.4a176cfcdfd4ef869d12.css"
       ],
       "patterns": []
@@ -81,7 +81,7 @@
     }
   ],
   "hashTable": {
-    "/0.37a9f2e29344abe6b59f.js": "01aa18ada2a4c006cf0c3d7085188fad20b3a22d",
+    "/0.3c7bcc363b227cbc13a7.js": "d8cd9235ae1e46c8bc42cca228ba0e93230b244d",
     "/assets/images/1001-albums.jpg": "9e0ee6bdec1d38b77eb225729f10671f575de79b",
     "/assets/images/bestsellers/20-bimata-mprosta.jpg": "288bd564c0c96ea11a9f62e3c21d4d1662d8453b",
     "/assets/images/bestsellers/i-siopili-asthenis.jpg": "1c0c4315a0ff2ecc7fd928150f871188ade72824",
@@ -125,10 +125,10 @@
     "/assets/images/vios-kai-politeia.jpg": "e76f2d2316f1e21cf072751969aac384a1f8dfc0",
     "/assets/images/windows-98.jpg": "ff677202314afb6f1be874de4e49fd7d96dc6242",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "a9b34c96cf7c0f95ea2394b3400378119df0814f",
-    "/main.46495f5e3dd5c3fcc7d2.js": "5ea1b1d2da59d3173f3833f000298397cd118106",
+    "/index.html": "78e854e40dce4d729b1492d2ec63e5f9fe431104",
+    "/main.ac33e2b1bde1662bf239.js": "d0b56212184ea28c66cb4f1ffea1ff4ad0d5fb63",
     "/polyfills.27ba7ccfa975df7b6881.js": "a2736e6d825142bf94bc5287b3ebe80735bdd4d0",
-    "/runtime.0cc96ecc16e133d29bb2.js": "5fc4261d31770ec18892896e7945f8df8dbfe6d6",
+    "/runtime.874b36890a6905162c13.js": "11712d2a456abc5f8bd5c85e781c4edf8b77f2af",
     "/styles.4a176cfcdfd4ef869d12.css": "b1ae307eb684ee8b7bb6548a7e132eecc22b87ac"
   },
   "navigationUrls": [

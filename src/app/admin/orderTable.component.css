@@ -1,0 +1,25 @@
+p {
+    font-size: 0.9rem;
+}
+
+.table-sm td, .table-sm th {
+    padding: .1rem;
+    font-size: 0.9rem;
+}
+
+hr { 
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888;
+  } 
+
+@media only screen and (min-width: 768px) {
+    p {
+        font-size: 1rem;
+    }
+
+    .table-sm td, .table-sm th {
+        padding: .3rem;
+        font-size: 1rem;
+    }
+}

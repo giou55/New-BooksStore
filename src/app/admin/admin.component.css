@@ -1,0 +1,15 @@
+button {
+    margin-right: 0.4rem;
+}
+.btn {
+    padding: .2rem .4rem;
+}
+
+@media only screen and (min-width: 768px) {
+    button {
+        margin-right: 1rem;
+    }
+    .btn {
+        padding: .375rem .75rem;
+    }
+}

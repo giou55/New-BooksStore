@@ -3,7 +3,8 @@ import { Cart } from "../../model/cart.model";
 import { ConnectionService } from "../../model/connection.service";
 
 @Component({
-    templateUrl: "cartDetail.component.html"
+    templateUrl: "cartDetail.component.html",
+    styleUrls: ["cartDetail.component.css"]
 })
 export class CartDetailComponent {
     public connected: boolean = true;
