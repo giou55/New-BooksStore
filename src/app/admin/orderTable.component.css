@@ -1,25 +1,45 @@
+h3 {
+    font-size: 1rem;
+}
 p {
     font-size: 0.9rem;
 }
-
-.table-sm td, .table-sm th {
-    padding: .1rem;
-    font-size: 0.9rem;
+.card-deck .card {
+    margin-bottom: 1rem;
+}
+ul {
+    padding-inline-start: 10px;
 }
 
-hr { 
-    border-style: solid;
-    border-width: 1px;
-    border-color: #888;
-  } 
+@media (min-width: 576px) {
+    .card-deck .card {
+        -ms-flex: 1 0 42%;
+        flex: 0 0 42%;
+    }
+}
 
 @media only screen and (min-width: 768px) {
+    h3 {
+        font-size: 1.2rem;
+    }
     p {
         font-size: 1rem;
     }
+    .card-deck .card {
+        -ms-flex: 1 0 30%;
+        flex: 0 0 30%;
+    }
+}
 
-    .table-sm td, .table-sm th {
-        padding: .3rem;
-        font-size: 1rem;
+@media (min-width: 992px) {
+    .card-deck .card {
+        -ms-flex: 1 0 22%;
+        flex: 0 0 28%;
+    }
+}
+@media (min-width: 1200px) {
+    .card-deck .card {
+        -ms-flex: 1 0 22%;
+        flex: 0 0 22%;
     }
 }
