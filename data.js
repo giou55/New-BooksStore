@@ -23,6 +23,103 @@ module.exports = function () {
             { id: 20, name: "Τα ελληνικά Comics", category: "Κόμικς", author: "SOLOUP", imagePath: "assets/images/comics.jpg", price: 20.90},
             { id: 21, name: "Infographics Καθημερινά", category: "Γραφιστική-Design", author: "Πάνος Κωνσταντόπουλος", imagePath: "assets/images/infographics.jpg", price: 35}
         ],
-        orders: []
+        orders: [
+            {
+                cart: {
+                    "lines": [{
+                            "product": {
+                                "id": 3,
+                                "name": "100 Cult Films",
+                                "category": "Κινηματογράφος",
+                                "author": "ERNEST MATHIJS, XAVIER MENDIK",
+                                "imagePath": "assets/cult-films.jpg",
+                                "price": 20.9
+                            },
+                            "quantity": 1
+                        },
+                        {
+                            "product": {
+                                "id": 6,
+                                "name": "Όσα δεν γνωρίζατε για τα χρόνια του Καποδίστρια, του Όθωνα και του Γεωργίου του Α΄",
+                                "category": "Ιστορία",
+                                "author": "ΣΥΛΛΟΓΙΚΟ ΕΡΓΟ",
+                                "imagePath": "assets/osa-den-gnorizate.jpg",
+                                "price": 12
+                            },
+                            "quantity": 1
+                        },
+                        {
+                            "product": {
+                                "id": 8,
+                                "name": "Η Κόμη της Βερενίκης",
+                                "category": "Επιστήμες-Τεχνολογία",
+                                "author": "ΓΙΩΡΓΟΣ ΓΡΑΜΜΑΤΙΚΑΚΗΣ",
+                                "imagePath": "assets/komi-tis-verenikis.jpg",
+                                "price": 20
+                            },
+                            "quantity": 1
+                        }
+                    ],
+                    "itemCount": 3,
+                    "cartPrice": 52.9
+                },
+                "shipped": false,
+                "name": "trtt",
+                "address": "4t45yt",
+                "city": "ggge",
+                "state": "tgg44g",
+                "zip": "grtgrtgr",
+                "country": "gghrthrhh",
+                "id": 1
+            }, 
+            {
+                cart: {
+                    "lines": [{
+                            "product": {
+                                "id": 3,
+                                "name": "100 Cult Films",
+                                "category": "Κινηματογράφος",
+                                "author": "ERNEST MATHIJS, XAVIER MENDIK",
+                                "imagePath": "assets/cult-films.jpg",
+                                "price": 20.9
+                            },
+                            "quantity": 2
+                        },
+                        {
+                            "product": {
+                                "id": 6,
+                                "name": "Όσα δεν γνωρίζατε για τα χρόνια του Καποδίστρια, του Όθωνα και του Γεωργίου του Α΄",
+                                "category": "Ιστορία",
+                                "author": "ΣΥΛΛΟΓΙΚΟ ΕΡΓΟ",
+                                "imagePath": "assets/osa-den-gnorizate.jpg",
+                                "price": 12
+                            },
+                            "quantity": 1
+                        },
+                        {
+                            "product": {
+                                "id": 7,
+                                "name": "Μόμπυ Ντικ",
+                                "category": "Λογοτεχνία",
+                                "author": "ΜΕΛΒΙΛ ΧΕΡΜΑΝ",
+                                "imagePath": "assets/moby.jpg",
+                                "price": 15
+                            },
+                            "quantity": 1
+                        }
+                    ],
+                    "itemCount": 4,
+                    "cartPrice": 68.8
+                },
+                "shipped": false,
+                "name": "ffferf",
+                "address": "gfergerg",
+                "city": "ggrtgrtg",
+                "state": "fererge",
+                "zip": "gggrtgrtg",
+                "country": "ggrtgrtgr",
+                "id": 2
+            }
+        ]
     }
 }
