@@ -5,7 +5,8 @@ import { Product } from "../model/product.model";
 import { ProductRepository } from "../model/product.repository";
 
 @Component({
-    templateUrl: "productEditor.component.html"
+    templateUrl: "productEditor.component.html",
+    styleUrls: ["productEditor.component.css"]
 })
 export class ProductEditorComponent {
     editing: boolean = false;

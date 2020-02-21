@@ -1,0 +1,31 @@
+<table class="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Όνομα</th>
+            <th>Κατηγορία</th>
+            <th>Τιμή</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of getProducts()">
+            <td>{{p.id}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.category}}</td>
+            <td>{{p.price | currency:"EUR":"symbol"}}</td>
+            <td>
+                <button class="btn btn-sm btn-warning mr-2"
+                        [routerLink]="['/admin/main/products/edit', p.id]">
+                    Επεξεργασία
+                </button>
+                <button class="btn btn-sm btn-danger" (click)="deleteProduct(p.id)">
+                    Διαγραφή
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<button class="btn btn-primary mb-2" routerLink="/admin/main/products/create">
+    Δημιουργία νέου προϊόντος
+</button>

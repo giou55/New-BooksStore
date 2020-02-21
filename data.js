@@ -119,6 +119,198 @@ module.exports = function () {
                 "zip": "gggrtgrtg",
                 "country": "ggrtgrtgr",
                 "id": 2
+            },
+            {
+                cart: {
+                    "lines": [{
+                            "product": {
+                                "id": 3,
+                                "name": "100 Cult Films",
+                                "category": "Κινηματογράφος",
+                                "author": "ERNEST MATHIJS, XAVIER MENDIK",
+                                "imagePath": "assets/cult-films.jpg",
+                                "price": 20.9
+                            },
+                            "quantity": 2
+                        },
+                        {
+                            "product": {
+                                "id": 6,
+                                "name": "Όσα δεν γνωρίζατε για τα χρόνια του Καποδίστρια, του Όθωνα και του Γεωργίου του Α΄",
+                                "category": "Ιστορία",
+                                "author": "ΣΥΛΛΟΓΙΚΟ ΕΡΓΟ",
+                                "imagePath": "assets/osa-den-gnorizate.jpg",
+                                "price": 12
+                            },
+                            "quantity": 1
+                        },
+                        {
+                            "product": {
+                                "id": 7,
+                                "name": "Μόμπυ Ντικ",
+                                "category": "Λογοτεχνία",
+                                "author": "ΜΕΛΒΙΛ ΧΕΡΜΑΝ",
+                                "imagePath": "assets/moby.jpg",
+                                "price": 15
+                            },
+                            "quantity": 1
+                        }
+                    ],
+                    "itemCount": 4,
+                    "cartPrice": 68.8
+                },
+                "shipped": false,
+                "name": "ffferf",
+                "address": "gfergerg",
+                "city": "ggrtgrtg",
+                "state": "fererge",
+                "zip": "gggrtgrtg",
+                "country": "ggrtgrtgr",
+                "id": 2
+            },
+            {
+                cart: {
+                    "lines": [{
+                            "product": {
+                                "id": 3,
+                                "name": "100 Cult Films",
+                                "category": "Κινηματογράφος",
+                                "author": "ERNEST MATHIJS, XAVIER MENDIK",
+                                "imagePath": "assets/cult-films.jpg",
+                                "price": 20.9
+                            },
+                            "quantity": 2
+                        },
+                        {
+                            "product": {
+                                "id": 6,
+                                "name": "Όσα δεν γνωρίζατε για τα χρόνια του Καποδίστρια, του Όθωνα και του Γεωργίου του Α΄",
+                                "category": "Ιστορία",
+                                "author": "ΣΥΛΛΟΓΙΚΟ ΕΡΓΟ",
+                                "imagePath": "assets/osa-den-gnorizate.jpg",
+                                "price": 12
+                            },
+                            "quantity": 1
+                        },
+                        {
+                            "product": {
+                                "id": 7,
+                                "name": "Μόμπυ Ντικ",
+                                "category": "Λογοτεχνία",
+                                "author": "ΜΕΛΒΙΛ ΧΕΡΜΑΝ",
+                                "imagePath": "assets/moby.jpg",
+                                "price": 15
+                            },
+                            "quantity": 1
+                        }
+                    ],
+                    "itemCount": 4,
+                    "cartPrice": 68.8
+                },
+                "shipped": false,
+                "name": "ffferf",
+                "address": "gfergerg",
+                "city": "ggrtgrtg",
+                "state": "fererge",
+                "zip": "gggrtgrtg",
+                "country": "ggrtgrtgr",
+                "id": 2
+            },
+            {
+                cart: {
+                    "lines": [{
+                            "product": {
+                                "id": 3,
+                                "name": "100 Cult Films",
+                                "category": "Κινηματογράφος",
+                                "author": "ERNEST MATHIJS, XAVIER MENDIK",
+                                "imagePath": "assets/cult-films.jpg",
+                                "price": 20.9
+                            },
+                            "quantity": 2
+                        },
+                        {
+                            "product": {
+                                "id": 6,
+                                "name": "Όσα δεν γνωρίζατε για τα χρόνια του Καποδίστρια, του Όθωνα και του Γεωργίου του Α΄",
+                                "category": "Ιστορία",
+                                "author": "ΣΥΛΛΟΓΙΚΟ ΕΡΓΟ",
+                                "imagePath": "assets/osa-den-gnorizate.jpg",
+                                "price": 12
+                            },
+                            "quantity": 1
+                        },
+                        {
+                            "product": {
+                                "id": 7,
+                                "name": "Μόμπυ Ντικ",
+                                "category": "Λογοτεχνία",
+                                "author": "ΜΕΛΒΙΛ ΧΕΡΜΑΝ",
+                                "imagePath": "assets/moby.jpg",
+                                "price": 15
+                            },
+                            "quantity": 1
+                        }
+                    ],
+                    "itemCount": 4,
+                    "cartPrice": 68.8
+                },
+                "shipped": false,
+                "name": "ffferf",
+                "address": "gfergerg",
+                "city": "ggrtgrtg",
+                "state": "fererge",
+                "zip": "gggrtgrtg",
+                "country": "ggrtgrtgr",
+                "id": 2
+            },
+            {
+                cart: {
+                    "lines": [{
+                            "product": {
+                                "id": 3,
+                                "name": "100 Cult Films",
+                                "category": "Κινηματογράφος",
+                                "author": "ERNEST MATHIJS, XAVIER MENDIK",
+                                "imagePath": "assets/cult-films.jpg",
+                                "price": 20.9
+                            },
+                            "quantity": 2
+                        },
+                        {
+                            "product": {
+                                "id": 6,
+                                "name": "Όσα δεν γνωρίζατε για τα χρόνια του Καποδίστρια, του Όθωνα και του Γεωργίου του Α΄",
+                                "category": "Ιστορία",
+                                "author": "ΣΥΛΛΟΓΙΚΟ ΕΡΓΟ",
+                                "imagePath": "assets/osa-den-gnorizate.jpg",
+                                "price": 12
+                            },
+                            "quantity": 1
+                        },
+                        {
+                            "product": {
+                                "id": 7,
+                                "name": "Μόμπυ Ντικ",
+                                "category": "Λογοτεχνία",
+                                "author": "ΜΕΛΒΙΛ ΧΕΡΜΑΝ",
+                                "imagePath": "assets/moby.jpg",
+                                "price": 15
+                            },
+                            "quantity": 1
+                        }
+                    ],
+                    "itemCount": 4,
+                    "cartPrice": 68.8
+                },
+                "shipped": false,
+                "name": "ffferf",
+                "address": "gfergerg",
+                "city": "ggrtgrtg",
+                "state": "fererge",
+                "zip": "gggrtgrtg",
+                "country": "ggrtgrtgr",
+                "id": 2
             }
         ]
     }

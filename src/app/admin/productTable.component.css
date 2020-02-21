@@ -1,11 +1,23 @@
-.table-sm td, .table-sm th {
-    padding: .1rem;
+h3 {
+    font-size: 1rem;
+}
+p {
     font-size: 0.9rem;
 }
+li {
+    font-size: 0.9rem;
+}
+.card-deck .card {
+    margin-bottom: 1rem;
+}
+ul {
+    padding-inline-start: 10px;
+}
 
-@media only screen and (min-width: 768px) {
-    .table-sm td, .table-sm th {
-        padding: .3rem;
-        font-size: 1rem;
+@media (min-width: 576px) {
+    .card-deck .card {
+        -ms-flex: 0 0 240px;
+        flex: 0 0 240px;
     }
 }
+

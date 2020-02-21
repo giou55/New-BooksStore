@@ -9,17 +9,17 @@
 
 <div class="container-fluid">
     <div class="card-deck">
-        <ng-template ngFor let-o [ngForOf]="getOrders()">
+        <ng-template ngFor let-o [ngForOf]="getOrders()" let-i="index">
             <div class="card bg-light">
                 <div class="card-body text-left">
-                    <h3>Στοιχεία παραλήπτη</h3>
+                    <h3>Παραγγελία {{i+1}}</h3>
                     <p>Όνομα: {{o.name}}<br>
                         Διεύθυνση: {{o.address}}<br>
                         Πόλη: {{o.city}}<br>
                         Τ.Κ.: {{o.zip}}<br>
                         Χώρα: {{o.country}}
                     </p>
-                    <h3>Προϊόντα παραγγελίας</h3>
+                    <h4>Καλάθι παραγγελίας:</h4>
                     <ul>
                       <li *ngFor="let line of o.cart.lines">
                         {{line.product.name}} (ποσότητα: {{line.quantity}})
