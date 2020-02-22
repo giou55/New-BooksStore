@@ -9,6 +9,17 @@ h3 {
     padding: .3rem;
     font-size: 0.9rem;
 }
+.col {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media only screen and (min-width: 576px) {
+    .col {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
 
 @media only screen and (min-width: 768px) {
     h3 {

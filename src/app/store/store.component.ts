@@ -59,7 +59,14 @@ export class StoreComponent {
 
     addProductToCart(product: Product) {
         this.cart.addLine(product);
-        alert("Προστέθηκε στο καλάθι");
+        let scrollToTop = window.setInterval(() => {
+            let pos = window.pageYOffset;
+            if (pos > 0) {
+                window.scrollTo(0, pos - 20);
+            } else {
+                window.clearInterval(scrollToTop);
+            }
+        }, 16);
     }
 
     navbarOpen = false;
