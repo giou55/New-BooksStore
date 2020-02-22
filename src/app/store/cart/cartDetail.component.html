@@ -27,7 +27,7 @@
             <tr *ngFor="let line of cart.lines">
               <td>
                 <input type="number" class="form-control-sm"
-                       style="width:5em"
+                       style="width:4em"
                        [value]="line.quantity"
                        (change)="cart.updateQuantity(line.product,
                                   $event.target.value)" />

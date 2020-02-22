@@ -13,11 +13,17 @@ h3 {
     padding-right: 0;
     padding-left: 0;
 }
+.form-control-sm {
+    padding: .1rem .2rem;
+}
 
 @media only screen and (min-width: 576px) {
     .col {
         padding-right: 15px;
         padding-left: 15px;
+    }
+    .form-control-sm {
+        padding: .25rem .5rem;
     }
 }
 
@@ -26,11 +32,11 @@ h3 {
         font-size: 1.75rem;
     }
     .table th {
-        padding: .75rem;
+        padding: .4rem;
         font-size: 1rem;
     }
     .table td {
-        padding: .75rem;
+        padding: .4rem;
         font-size: 1rem;
     }
 }
