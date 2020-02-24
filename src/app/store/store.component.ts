@@ -59,14 +59,15 @@ export class StoreComponent {
 
     addProductToCart(product: Product) {
         this.cart.addLine(product);
-        let scrollToTop = window.setInterval(() => {
-            let pos = window.pageYOffset;
-            if (pos > 0) {
-                window.scrollTo(0, pos - 20);
-            } else {
-                window.clearInterval(scrollToTop);
-            }
-        }, 16);
+        this.showSnackbar();
+        // let scrollToTop = window.setInterval(() => {
+        //     let pos = window.pageYOffset;
+        //     if (pos > 0) {
+        //         window.scrollTo(0, pos - 20);
+        //     } else {
+        //         window.clearInterval(scrollToTop);
+        //     }
+        // }, 16);
     }
 
     navbarOpen = false;
@@ -80,5 +81,16 @@ export class StoreComponent {
         this.selectedHome = false;
         this.searchResults =  this.repository.getProducts().filter(x => x.name.toLowerCase().search(text.toLowerCase()) !== -1);
     }
+
+    showSnackbar() {
+        // Get the snackbar DIV
+        var x = document.getElementById("snackbar");
+      
+        // Add the "show" class to DIV
+        x.className = "show";
+      
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      }
 
 }
