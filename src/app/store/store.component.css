@@ -144,14 +144,14 @@ a:hover {
 }
 .booksResults img {
     width: 100%;
-    max-height: 400px;
+    margin-bottom: 0.5rem;
 }
 .booksResults h4 {
     font-size: 18px;
 }
 .books img {
     width: 100%;
-    max-height: 400px;
+    margin-bottom: 0.5rem;
 }
 .books h4 {
     font-size: 18px;
