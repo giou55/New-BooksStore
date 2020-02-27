@@ -164,9 +164,17 @@
       "id": 21,
       "name": "Infographics Καθημερινά",
       "category": "Γραφιστική-Design",
-      "author": "Πάνος Κωνσταντόπουλοs",
+      "author": "ΠΑΝΟΣ ΚΩΝΣΤΑΝΤΟΠΟΥΛΟΣ",
       "imagePath": "assets/images/infographics.jpg",
       "price": 35
+    },
+    {
+      "id": 22,
+      "name": "Graphic Design",
+      "category": "Γραφιστική-Design",
+      "author": "ΠΑΝΟΣ ΚΩΝΣΤΑΝΤΟΠΟΥΛΟΣ",
+      "imagePath": "assets/images/graphic-design.jpg",
+      "price": 42.5
     }
   ],
   "orders": [

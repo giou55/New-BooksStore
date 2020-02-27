@@ -13,6 +13,16 @@ li {
 ul {
     padding-inline-start: 10px;
 }
+img {
+    width: 80%;
+}
+.card-deck .card {
+    -ms-flex: 0 0 240px;
+    flex: 0 0 240px;
+}
+.card-deck {
+    flex-flow: row wrap;
+}
 
 @media (min-width: 576px) {
     .card-deck .card {

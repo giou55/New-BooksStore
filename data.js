@@ -21,7 +21,8 @@ module.exports = function () {
             { id: 18, name: "1001 Albums You Must Hear Before You Die", category: "Μουσική", author: "ROBERT DIMERY", imagePath: "assets/images/1001-albums.jpg", price: 32},
             { id: 19, name: "Κυνηγώντας το μεγάλο ψάρι", category: "Κινηματογράφος", author: "DAVID LYNCH", imagePath: "assets/images/megalo-psari.jpg", price: 22},
             { id: 20, name: "Τα ελληνικά Comics", category: "Κόμικς", author: "SOLOUP", imagePath: "assets/images/comics.jpg", price: 20.90},
-            { id: 21, name: "Infographics Καθημερινά", category: "Γραφιστική-Design", author: "Πάνος Κωνσταντόπουλος", imagePath: "assets/images/infographics.jpg", price: 35}
+            { id: 21, name: "Infographics Καθημερινά", category: "Γραφιστική-Design", author: "ΠΑΝΟΣ ΚΩΝΣΤΑΝΤΟΠΟΥΛΟΣ", imagePath: "assets/images/infographics.jpg", price: 35},
+            { id: 22, name: "Graphic Design", category : "Γραφιστική-Design", author: "ΠΑΝΟΣ ΚΩΝΣΤΑΝΤΟΠΟΥΛΟΣ", imagePath : "assets/images/graphic-design.jpg", price: 42.5}
         ],
         orders: [
             {

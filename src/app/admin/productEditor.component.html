@@ -1,22 +1,32 @@
 <h3>{{editing  ? "Επεξεργασία" : "Δημιουργία"}} Βιβλίου</h3>
 
-<form novalidate #form="ngForm" (ngSubmit)="save(form)">
-    <div class="form-group">
-        <label>Όνομα</label>
-        <input class="form-control" name="name" [(ngModel)]="product.name" />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+
+            <form novalidate #form="ngForm" (ngSubmit)="save(form)">
+                <div class="form-group">
+                    <label>Όνομα</label>
+                    <input class="form-control" name="name" [(ngModel)]="product.name" />
+                </div>
+                <div class="form-group">
+                    <label>Κατηγορία</label>
+                    <select class="form-control" name="category" [(ngModel)]="product.category">
+                        <option *ngFor="let cat of categories" value="{{cat}}">{{cat}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Τιμή</label>
+                    <input class="form-control" name="price" [(ngModel)]="product.price" />
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm mr-4">
+                    {{editing ? "Αποθήκευση" : "Δημιουργία"}}
+                </button>
+                <button type="reset" class="btn btn-secondary btn-sm" routerLink="/admin/main/products">
+                    Ακύρωση
+                </button>
+            </form>
+
+        </div>
     </div>
-    <div class="form-group">
-        <label>Κατηγορία</label>
-        <input class="form-control" name="category" [(ngModel)]="product.category" />
-    </div>
-    <div class="form-group">
-        <label>Τιμή</label>
-        <input class="form-control" name="price" [(ngModel)]="product.price" />
-    </div>
-    <button type="submit" class="btn btn-primary btn-sm mr-4" [class.btn-warning]="editing">
-        {{editing ? "Αποθήκευση" : "Δημιουργία"}}
-    </button>
-    <button type="reset" class="btn btn-secondary btn-sm" routerLink="/admin/main/products">
-        Ακύρωση
-    </button>
-</form>
+</div>

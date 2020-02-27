@@ -23,6 +23,10 @@ export class ProductEditorComponent {
         }
     }
 
+    get categories(): string[] {
+        return this.repository.getCategories();
+    }
+
     save(form: NgForm) {
         this.repository.saveProduct(this.product);
         this.router.navigateByUrl("/admin/main/products");
