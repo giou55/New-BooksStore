@@ -16,6 +16,10 @@ h3 {
 .form-control-sm {
     padding: .1rem .2rem;
 }
+table .btn, table .btn-sm {
+    padding: .1rem .2rem;
+    font-size: .6rem;
+}
 
 @media only screen and (min-width: 576px) {
     .col {
@@ -38,5 +42,9 @@ h3 {
     .table td {
         padding: .4rem;
         font-size: 1rem;
+    }
+    table .btn, table .btn-sm {
+        padding: .2rem .4rem;
+        font-size: .8rem;
     }
 }

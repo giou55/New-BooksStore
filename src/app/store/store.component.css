@@ -10,6 +10,9 @@ main {
 h3 {
     font-size: 1.3rem;
 }
+.btn-dark {
+    background-color: #666;
+} 
 .card-img-top {
     width: 70%;
     margin: auto;
