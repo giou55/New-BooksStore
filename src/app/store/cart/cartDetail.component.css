@@ -4,10 +4,15 @@ h3 {
 .table th {
     padding: .3rem;
     font-size: 0.9rem;
+    font-weight: normal;
 }
 .table td {
     padding: .3rem;
     font-size: 0.9rem;
+}
+.table thead, .table tfoot {
+    background-color: rgb(233, 242, 250);
+    font-weight: normal;
 }
 .col {
     padding-right: 0;
@@ -15,6 +20,7 @@ h3 {
 }
 .form-control-sm {
     padding: .1rem .2rem;
+    width: 3rem;
 }
 table .btn, table .btn-sm {
     padding: .1rem .2rem;
@@ -28,6 +34,7 @@ table .btn, table .btn-sm {
     }
     .form-control-sm {
         padding: .25rem .5rem;
+        width: 4rem;
     }
 }
 

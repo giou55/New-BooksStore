@@ -62,8 +62,8 @@
                                 <h4 class="card-title">{{product.name}}</h4>
                                 <p>{{product.author}}</p>
                                 <p class="card-text">{{ product.price | currency:"EUR":"symbol" }}</p>
-                                <button class="btn btn-dark btn-sm" (click)="addProductToCart(product)">
-                                    Προσθήκη στο καλάθι
+                                <button class="btn btn-secondary" (click)="addProductToCart(product)">
+                                    <i class="fas fa-cart-arrow-down"></i> ΑΓΟΡΑ
                                 </button>
                             </div>
                         </div>
@@ -73,11 +73,11 @@
         </div>
 
 
-        <div *ngIf="selectedHome == true" class="row">
-            <div class="col-12">
+        <div *ngIf="selectedHome == true" class="row justify-content-center">
+            <div class="col-10">
                 <img src="assets/images/home/bookstore.jpg" alt="" class="bookstore">
             </div>
-            <div class="col-12">
+            <div class="col-8">
                 <img src="assets/images/home/bookstore2.jpg" alt="" class="bookstore">
             </div>
         </div>
@@ -118,8 +118,8 @@
                                         <h4 class="card-title">{{product.name}}</h4>
                                         <p>{{product.author}}</p>
                                         <p class="card-text">{{ product.price | currency:"EUR":"symbol" }}</p>
-                                        <button class="btn btn-dark btn-sm" (click)="addProductToCart(product)">
-                                            Προσθήκη στο καλάθι
+                                        <button class="btn btn-secondary" (click)="addProductToCart(product)">
+                                            <i class="fas fa-cart-arrow-down"></i> ΑΓΟΡΑ
                                         </button>
                                     </div>
                                 </div>
@@ -190,7 +190,7 @@
         </div>
     </main>
 
-    <div id="snackbar">Το προϊόν προστέθηκε στο καλάθι με επιτυχία!</div>
+    <div id="snackbar"><i class="fas fa-check-circle"></i> Προσθέσατε το προϊόν στο καλάθι αγορών σας!</div>
 
     <app-footer></app-footer>
 
