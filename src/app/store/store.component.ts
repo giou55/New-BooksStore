@@ -77,9 +77,11 @@ export class StoreComponent {
     }
 
     doSearch(text:string) {
-        this.selectedCategory = null;
-        this.selectedHome = false;
-        this.searchResults =  this.repository.getProducts().filter(x => x.name.toLowerCase().search(text.toLowerCase()) !== -1);
+        if (text != '') {
+            this.selectedCategory = null;
+            this.selectedHome = false;
+            this.searchResults =  this.repository.getProducts().filter(x => x.name.toLowerCase().search(text.toLowerCase()) !== -1); 
+        }
     }
 
     showSnackbar() {
@@ -88,7 +90,7 @@ export class StoreComponent {
         // Add the "show" class to DIV
         x.className = "show";
         // After 2 seconds, remove the show class from DIV
-        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2000);
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
       }
 
 }

@@ -11,7 +11,7 @@ h3 {
     font-size: 0.9rem;
 }
 .table thead, .table tfoot {
-    background-color: rgb(233, 242, 250);
+    background-color: #eee;
     font-weight: normal;
 }
 .col {
